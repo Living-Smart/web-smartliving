@@ -29,7 +29,7 @@
     <div class="panel-overlay"></div>
 
     <!-- panel-reveal -->
-    <div class="panel panel-left">
+    <div class="panel panel-left panel-reveal">
       <div class="view view-subnav">
         <div class="pages">
           <div data-page="panel-leftmenu" class="page pagepanel">
@@ -62,7 +62,7 @@
                   </li>
                   <li>
                     <a
-                      href="features.html"
+                      href="blog.html"
                       class="close-panel"
                       data-view=".view-main"
                       ><img
@@ -142,7 +142,7 @@
     </div>
 
     <!-- panel-reveal -->
-    <div class="panel panel-right">
+    <div class="panel panel-right panel-reveal">
       <div class="user_login_info">
         <div class="user_thumb">
           <img src="images/page_photo.jpg" alt="" title="" />
@@ -191,7 +191,10 @@
                     ><img src="images/icons/white/menu.png" alt="" title=""
                   /></a>
                 </div>
-                <div class="navbar_right">
+                <div class="navbar_right" id="loginButton" style="display:none;">
+                  <a href="#" data-popup=".popup-login" class="open-popup"><button id="showLoginPopup">Login</button></a>
+                </div>
+                <div class="navbar_right" id="userButton">
                   <a href="#" data-panel="right" class="open-panel"
                     ><img src="images/icons/white/user.png" alt="" title=""
                   /></a>
@@ -358,7 +361,7 @@
                 <div class="swiper-pagination-toolbar"></div>
                 <div class="swiper-wrapper">
                   <div class="swiper-slide toolbar-icon">
-                    <a href="about.html" data-view=".view-main"
+                    <a href="blog.html" data-view=".view-main"
                       ><img
                         src="images/icons/blue/Article.svg"
                         alt=""
@@ -401,50 +404,6 @@
                       /><span>MODUL SAFETY RIDING DAN ZOSS</span>
                     </a>
                   </div>
-                  <!-- <div class="swiper-slide toolbar-icon">
-                    <a href="shop.html" data-view=".view-main"
-                      ><img
-                        src="images/icons/blue/shop.png"
-                        alt=""
-                        title=""
-                      /><span>SHOP</span></a
-                    >
-                    <a href="music.html" data-view=".view-main"
-                      ><img
-                        src="images/icons/blue/music.png"
-                        alt=""
-                        title=""
-                      /><span>MUSIC</span></a
-                    >
-                    <a href="form.html" data-view=".view-main"
-                      ><img
-                        src="images/icons/blue/form.png"
-                        alt=""
-                        title=""
-                      /><span>CUSTOM FORM</span></a
-                    >
-                    <a href="#" data-popup=".popup-social" class="open-popup"
-                      ><img
-                        src="images/icons/blue/twitter.png"
-                        alt=""
-                        title=""
-                      /><span>SOCIAL</span></a
-                    >
-                    <a href="videos.html" data-view=".view-main"
-                      ><img
-                        src="images/icons/blue/video.png"
-                        alt=""
-                        title=""
-                      /><span>VIDEOS</span></a
-                    >
-                    <a href="tel:12345678" class="external"
-                      ><img
-                        src="images/icons/blue/phone.png"
-                        alt=""
-                        title=""
-                      /><span>CALL NOW!</span></a
-                    >
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -458,7 +417,7 @@
       <div class="content-block">
         <h4>LOGIN</h4>
         <div class="loginform">
-          <form id="LoginForm" method="post">
+          <form id="LoginForm" method="post" action="#">
             <input
               type="text"
               name="Username"
