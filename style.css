@@ -852,6 +852,11 @@ background-size: 100%;
 background-size: cover;
 background-position:center center;
 }
+.swiper-slide img {
+  width: 100%; /* Gambar mengisi lebar div */
+  height: 100%; /* Gambar mengisi tinggi div */
+  object-fit: cover; /* Memastikan gambar menutupi div tanpa distorsi */
+}
 .toolbar-icon a{
 display:flex;
 flex-direction: column;
@@ -1959,15 +1964,15 @@ float:left;
 margin:0 0 0 4%;
 }
 .post_details h2{
-font-size:14px;
+font-size:16px;
 line-height:20px;
 font-weight:400;
 margin:10px 0 10px 0;
 padding:0px;
 }
 .post_category a{
-font-size:14px;
-font-weight:700;
+font-size:20px;
+font-weight:600;
 padding:0;
 display:inline-block;
 }
@@ -2731,6 +2736,12 @@ max-width:40%;
 .backto {
   display: block !important;
 }
+.post_details h2{
+  font-size:14px;
+  }
+  .post_category a{
+  font-size:16px;
+  }
 }
 /* -----------------SMALL MOBILE---------------- */
 @media screen and (max-width: 470px) {
@@ -2756,6 +2767,12 @@ padding:13px 0 0 0;
 .backto {
   display: block !important;
 }
+.post_details h2{
+  font-size:14px;
+  }
+  .post_category a{
+  font-size:16px;
+  }
 }
 /* -----------------SMALLER MOBILE---------------- */
 @media screen and (max-width: 360px) {	
@@ -2770,6 +2787,12 @@ padding:15px 0 0 0;
 .backto {
   display: block !important;
 }
+.post_details h2{
+  font-size:14px;
+  }
+  .post_category a{
+  font-size:16px;
+  }
 }
 .toolbar-icon a span {
   display: block; 
