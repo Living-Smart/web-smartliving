@@ -3729,7 +3729,6 @@ background-size: 100%;
 background-size: cover;
 background-position:center center;
 }
-
 .swiper-slide img {
   width: 100%; /* Gambar mengisi lebar div */
   height: 100%; /* Gambar mengisi tinggi div */
