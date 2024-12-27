@@ -234,7 +234,7 @@ h2.page_title span {
 }
 h2.blog_title {
   width: 90%;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 50px;
   font-weight: 500;
   padding: 10px 0 15px 0;
@@ -1468,15 +1468,14 @@ ul.posts li {
   padding: 10px 0 0 0;
 }
 .post_thumb {
-  width: 25%;
+  width: 30%;
   float: left;
 }
 .post_thumb img {
   display: inline-block;
-  max-width: 100%;
 }
 .post_details {
-  width: 62%;
+  width: 57%;
   float: left;
   margin: 0 0 0 4%;
 }
@@ -1488,8 +1487,8 @@ ul.posts li {
   padding: 0px;
 }
 .post_category a {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
   padding: 0;
   display: inline-block;
 }
@@ -2141,6 +2140,12 @@ ul.responsive_table li:first-child {
     margin: 1.1%;
     padding: 5% 0;
   }
+  .post_category a {
+    font-size: 15px;
+  }
+  h2.blog_title {
+    font-size: 30px;
+  }
 }
 /* -----------------MOBILE---------------- */
 @media screen and (max-width: 680px) {
@@ -2216,7 +2221,7 @@ ul.responsive_table li:first-child {
   }
 
   .toolbar-icon a span {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .swiper-container-toolbar {
@@ -2272,9 +2277,6 @@ ul.responsive_table li:first-child {
   .post_details h2 {
     font-size: 14px;
   }
-  .post_category a {
-    font-size: 16px;
-  }
 }
 /* -----------------SMALL MOBILE---------------- */
 @media screen and (max-width: 470px) {
@@ -2304,7 +2306,7 @@ ul.responsive_table li:first-child {
     font-size: 14px;
   }
   .post_category a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 /* -----------------SMALLER MOBILE---------------- */
@@ -2322,9 +2324,6 @@ ul.responsive_table li:first-child {
   }
   .post_details h2 {
     font-size: 14px;
-  }
-  .post_category a {
-    font-size: 16px;
   }
 }
 .toolbar-icon a span {
